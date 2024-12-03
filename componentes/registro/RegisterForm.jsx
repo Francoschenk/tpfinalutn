@@ -43,7 +43,7 @@ const RegisterForm = ({ onRegister }) => {
           required
         />
       </div>
-      <button type="submit" onClick={() => navigate('/Logearse')}>Registrarse</button>
+      <button type="submit" onClick={() => window.location.href = '/Logearse'}>Registrarse</button>
     </form>
   );
 };
