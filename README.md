@@ -1,3 +1,6 @@
+La explicación de como utilizar la aplicación y su información pertinente se encuentra en el github del back https://github.com/Francoschenk/backtpfinalutn
+
+
 [# React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
