@@ -284,7 +284,7 @@ const Comentarios = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await axios.get('http://localhost:3200/api/review');
+        const response = await axios.get('https://backtpfinalutn.onrender.com/api/review');
         setReviews(response.data);
       } catch (error) {
         console.error('Error al obtener los reviews:', error);
@@ -295,7 +295,7 @@ const Comentarios = () => {
 
   const deleteReview = async (id) => {
     try {
-      await axios.delete(`http://localhost:3200/api/review/${id}`);
+      await axios.delete(`https://backtpfinalutn.onrender.com/api/review/${id}`);
       alert('Reseña eliminada con éxito');
       setReviews(reviews.filter((review) => review._id !== id));
     } catch (error) {
