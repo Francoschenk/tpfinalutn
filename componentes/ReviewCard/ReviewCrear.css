@@ -1,0 +1,76 @@
+/* Estilo principal del formulario */
+.add-review-page {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título del formulario */
+  .add-review-page h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 24px;
+    text-align: center; /* Centrado del título */
+  }
+  
+  /* Estilo para los campos de entrada */
+  .add-review-page input,
+  .add-review-page textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el área de texto (textarea) */
+  .add-review-page textarea {
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+  }
+  
+  /* Efecto de enfoque para los campos de entrada */
+  .add-review-page input:focus,
+  .add-review-page textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Botón de envío */
+  .add-review-page button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto del botón al pasar el mouse */
+  .add-review-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 480px) {
+    .add-review-page {
+      padding: 15px;
+    }
+  
+    .add-review-page h2 {
+      font-size: 20px;
+    }
+  
+    .add-review-page button {
+      padding: 10px;
+    }
+  }
+  

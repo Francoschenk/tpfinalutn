@@ -1,0 +1,190 @@
+/* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(240, 240, 240, 1);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(142, 193, 235);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+} */
+
+/* Estilo general del cuerpo */
+/* Estilo general del cuerpo */
+/* Estilo general del cuerpo */
+/* Estilo general del cuerpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(240, 240, 240, 1);
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del contenedor principal */
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(142, 193, 235);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Cuadrícula de tarjetas utilizando flexbox */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap; /* Esto asegura que las tarjetas se acomoden correctamente en múltiples filas */
+  gap: 20px;
+  justify-content: center; /* Centra las tarjetas */
+  padding: 20px 0;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  flex: 1 1 calc(33% - 20px); /* Las tarjetas ocupan 33% del contenedor y ajustan automáticamente */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Efecto al pasar el mouse por encima de la tarjeta */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del título dentro de la tarjeta */
+.card h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Estilo del texto dentro de la tarjeta */
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .card-grid {
+    justify-content: flex-start; /* Ajusta las tarjetas para que se alineen al inicio */
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Cada tarjeta ocupa el 50% del ancho disponible */
+  }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 658px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .card-grid {
+    flex-direction: column; /* Apila las tarjetas una debajo de otra */
+    justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+  }
+
+  .card {
+    flex: 1 1 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
+  }
+}
+
