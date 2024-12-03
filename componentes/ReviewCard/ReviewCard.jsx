@@ -58,7 +58,7 @@ const ReviewCard = ({ review, onDelete }) => {
       <p><strong>Rating:</strong> {review.score} / 10</p>
       <p><strong>Edad:</strong> {review.age}</p>
       <p><strong>Lugares:</strong> {review.places}</p>
-      <p><strong>Review:</strong> {review.reviewText}</p>
+      <p><strong>Review:</strong> {review.reviewtext}</p>
       <button
         onClick={() => onDelete(review._id)} // Llama a la función `onDelete`
         style={{ color: 'red', cursor: 'pointer' }}

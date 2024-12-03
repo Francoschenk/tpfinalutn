@@ -8,7 +8,7 @@ const AddReviewPage = () => {
     score: '',
     age: '',
     places: '',
-    reviewText: '',
+    reviewtext: '',
   });
 
   const handleChange = (e) => {
@@ -41,7 +41,7 @@ const AddReviewPage = () => {
           score: '',
           age: '',
           places: '',
-          reviewText: '',
+          reviewtext: '',
         });
       }
     } catch (error) {
@@ -98,8 +98,8 @@ const AddReviewPage = () => {
         <div>
             <label>Reseña:</label>
             <textarea
-                name="reviewText"
-                value={reviewData.reviewText}
+                name="reviewtext"
+                value={reviewData.reviewtext}
                 onChange={handleChange}
                 required
                 rows="5"
