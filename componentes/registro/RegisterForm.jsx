@@ -10,6 +10,7 @@ const RegisterForm = ({ onRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onRegister({ name, email, password });
+    navigate('/Logearse')
   };
 
   return (
@@ -42,7 +43,7 @@ const RegisterForm = ({ onRegister }) => {
           required
         />
       </div>
-      <button type="submit" onClick={()=>navigate('/Logearse')}>Registrarse</button>
+      <button type="submit" >Registrarse</button>
     </form>
   );
 };
