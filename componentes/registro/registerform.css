@@ -1,0 +1,14 @@
+/* hago un css solo para la aclaración */
+
+.logeado {
+    font-size: 18px;
+    color: #333; 
+    background-color: #f9f9f9; 
+    padding: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    text-align: center; 
+    margin: 20px auto; 
+    max-width: 400px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }

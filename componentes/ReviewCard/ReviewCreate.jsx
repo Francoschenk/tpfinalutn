@@ -51,6 +51,7 @@ const AddReviewPage = () => {
   };
   return (
     <div className="add-review-page">
+      <h2 className='logeado'>Para ver las reseñas de viaje, primero debe estar logeado.</h2>
       <h2>Crear Nueva Reseña</h2>
       <form onSubmit={handleSubmit}>
         <div>

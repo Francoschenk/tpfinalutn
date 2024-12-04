@@ -15,6 +15,7 @@ const RegisterForm = ({ onRegister }) => {
 
   return (
     <form onSubmit={handleSubmit} className="auth-form">
+      <h2 class='logeado'>Para ver las reseñas de viaje, primero debe estar logeado.</h2>
       <h2>Crear Cuenta</h2>
       <div>
         <label>Nombre:</label>

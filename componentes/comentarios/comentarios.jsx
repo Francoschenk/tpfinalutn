@@ -330,7 +330,6 @@ const Comentarios = () => {
   return (
     <div className="container">
       <nav>
-        <h2>Para ver las reseñas de viaje, primero debe estar logeado.</h2>
         {isLoggedIn && <button onClick={handleLogout}>Cerrar Sesión</button>}
       </nav>
       <AddReviewPage />
