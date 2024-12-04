@@ -1,160 +1,89 @@
-/* General */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-}
-
-/* Contenedor principal de las cartas */
-.cartas {
+.cartas{
   display: grid;
   grid-template-areas:
-    "header header header"
-    "cartas1 cartas2 cartas3"
-    "cartas3 cartas4"
-    "cartas5 cartas6"
-    "footer footer footer";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  "header header header"
+  "cartas1 cartas2 cartas3"
+  "cartas3 cartas4"
+  "cartas5 cartas6"
+  "footer footer footer";
+  grid-template-rows: 1fr ;  
+  grid-template-columns: 1fr  ; 
   width: 100%;
   padding: 1rem;
   gap: 10px;
 }
-
-/* Estilo individual de las cartas */
-.cartas1, .cartas2, .cartas3, .cartas4, .cartas5, .cartas6 {
-  background-color: rgb(144, 177, 241);
-  border-color: black;
-  border-width: 1px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+.mb-3{
+background-color: chocolate;
+}
+.separar{
+margin: 1%;
 }
 
-.cartas1:hover, .cartas2:hover, .cartas3:hover, .cartas4:hover, .cartas5:hover, .cartas6:hover {
-  transform: scale(1.03);
+.cartas1{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
 }
-
-/* Imagen de las cartas */
-.card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.cartas2{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}.cartas3{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
 }
-
-/* Contenido de las cartas */
-.card-body {
-  padding: 20px;
-  text-align: center;
+.cartas4{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}.cartas5{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
+}.cartas6{
+background-color: rgb(144, 177, 241);
+border-color: black;
+border-width: 1px;
 }
-
-/* Títulos de las cartas */
-.card-title {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-/* Texto de las cartas */
-.card-text {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-/* Botones */
-.botones {
-  padding: 10px 15px;
-  margin-top: 10px;
-  margin-right: 5px;
-  font-size: 0.9rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  background-color: #007bff;
-  transition: background-color 0.3s ease;
-}
-
-.botones:hover {
-  background-color: #0056b3;
-}
-
-.botones[disabled] {
-  background-color: #c4c4c4;
-  cursor: not-allowed;
-}
-
-/* Formulario */
-.formulario-control {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  padding: 10px;
-  font-size: 0.9rem;
-  color: #333;
-  resize: none;
-}
-
-/* Mensajes de error */
-.mensaje-error {
-  background-color: #ffe6e6;
-  color: #ff0000;
-  border: 1px solid #ff0000;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 0.9rem;
-  margin-top: 10px;
-  text-align: center;
-}
-
-/* Mensajes de texto generales */
-p {
-  font-size: 1rem;
-  color: #333;
-  text-align: center;
-  margin-top: 15px;
-}
-
-/* Adaptabilidad */
-
-/* Tablet */
-@media(min-width: 658px) {
-  #root {
-    background-color: rgb(192, 197, 207); 
-    width: 200vh;
-    row-gap: 10px;
-    column-gap: 1rem;
-    text-align: center;
+/*tablet*/
+@media(min-width: 658px){
+  #root{
+ 
+  background-color: rgb(192, 197, 207); 
+  width: 200vh;
+  row-gap: 10px;
+  column-gap: 1rem;
+  text-align: center; 
   }
-
-  .cartas {
-    width: max;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    border: 10px black;
+  .cartas{
+      width: max;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      border: 10px black;
   }
-
   header {
     grid-area: header;
   }
 }
 
-/* Escritorio */
-@media(min-width: 940px) {
-  #root {
+/*escritorio*/
+@media(min-width: 940px){
+  #root{
     width: 200vh;
   }
+  
 
-  .cartas {
-    width: max;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+  .cartas{
+      width: max;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr  1fr;
   }
-
+  /* .cartas1 {
+    background-color: rgb(154, 95, 202); 
+    border: 13px solid black;
+  } */
   header {
-    grid-area: header;
-  }
-}
+      grid-area: header;
+    }
+} 
