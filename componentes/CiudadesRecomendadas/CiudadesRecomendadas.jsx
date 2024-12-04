@@ -94,6 +94,7 @@ function Cartas() {
   return (
     <>
       <div className="cartas">
+        {/* París */}
         <Card className="cartas1" style={{ width: "100%" }}>
           <Card.Img
             variant="top"
@@ -102,8 +103,8 @@ function Cartas() {
           <Card.Body>
             <Card.Title>Paris</Card.Title>
             <Card.Text>
-              París, la ciudad del amor, destaca por su historia,
-              arquitectura impresionante y vibrante vida cultural.
+              París, la ciudad del amor, destaca por su historia, arquitectura
+              impresionante y vibrante vida cultural.
             </Card.Text>
             <Form.Group className="m3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Reseña de viaje</Form.Label>
@@ -155,7 +156,8 @@ function Cartas() {
             <p>total de viajes ${count}</p>
           </Card.Body>
         </Card>
-        {/* Repetir para los otros destinos */}
+  
+        {/* Río de Janeiro */}
         <Card className="cartas2" style={{ width: "100%" }}>
           <Card.Img
             variant="top"
@@ -164,8 +166,8 @@ function Cartas() {
           <Card.Body>
             <Card.Title>Río de Janeiro</Card.Title>
             <Card.Text>
-              Río de Janeiro, vibrante y festivo, destaca por sus playas
-              icónicas, el Cristo Redentor y el Carnaval.
+              Río de Janeiro, vibrante y festivo, destaca por sus playas icónicas,
+              el Cristo Redentor y el Carnaval.
             </Card.Text>
             <Form.Group className="m3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Reseña de viaje</Form.Label>
@@ -217,7 +219,71 @@ function Cartas() {
             <p>total de viajes ${count}</p>
           </Card.Body>
         </Card>
-        {/* Similar para los demás destinos: New York, Barcelona, Tokyo, Sydney */}
+  
+        {/* New York */}
+        <Card className="cartas3" style={{ width: "100%" }}>
+          <Card.Img
+            variant="top"
+            src="https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg"
+          />
+          <Card.Body>
+            <Card.Title>New York</Card.Title>
+            <Card.Text>
+              Nueva York, bulliciosa y diversa, ofrece rascacielos icónicos,
+              cultura vibrante y una energía única.
+            </Card.Text>
+            <Form.Group className="m3" controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Reseña de viaje</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={3}
+                className="formulario-control"
+                disabled={desactivador}
+              />
+            </Form.Group>
+            <button
+              className="separar botones"
+              disabled={desactivador}
+              onClick={handleGameClick}
+            >
+              Terminé de escribir mi reseña
+            </button>
+            <button
+              className="separar botones"
+              onClick={handleGameClic}
+              disabled={activador}
+            >
+              Modificar reseña
+            </button>
+            <Button
+              className="separar botones"
+              variant="primary"
+              onClick={() => {
+                setCount((count) => count + newyork);
+                setBnewyork(false);
+                setAnewyork(true);
+              }}
+              disabled={anewyork}
+            >
+              valor de viaje ${newyork}
+            </Button>
+            <Button
+              className="separar botones"
+              variant="primary"
+              onClick={() => {
+                setCount((count) => count - newyork);
+                setAnewyork(false);
+                setBnewyork(true);
+              }}
+              disabled={bnewyork}
+            >
+              cancelar viaje
+            </Button>
+            <p>total de viajes ${count}</p>
+          </Card.Body>
+        </Card>
+  
+        {/* Repite para Barcelona, Tokyo y Sydney */}
       </div>
     </>
   );
